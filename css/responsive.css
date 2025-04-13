@@ -1,0 +1,826 @@
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Large Desktop (1400px and above) */
+@media (min-width: 1400px) {
+
+    /* Navigation */
+    .nav-container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .site-logo {
+        font-size: 32px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .icon-btn {
+        font-size: 20px;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-content {
+        max-width: 900px;
+    }
+}
+
+/* Desktop (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    .nav-container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .about-section {
+        padding: 5rem 6%;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 2.2rem;
+    }
+}
+
+
+/* Small Desktop / Large Tablet (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Navigation */
+    .nav-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .site-logo {
+        font-size: 26px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .main-navigation {
+        padding: 15px 30px;
+    }
+
+    .nav-actions {
+        gap: 15px;
+    }
+
+    /* Hero Section */
+    .hero-slider {
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .hero-navigation {
+        bottom: 40px;
+    }
+
+    .hero-nav-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .brand-column {
+        grid-column: span 3;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .newsletter-column {
+        grid-column: span 3;
+        text-align: center;
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .payment-icons {
+        justify-content: center;
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Navigation */
+    .main-navigation {
+        padding: 15px 25px;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        order: 1;
+        flex: 1;
+        text-align: left;
+    }
+
+    .nav-actions {
+        order: 2;
+        gap: 15px;
+    }
+
+    .primary-menu {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+
+    .site-logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .icon-btn {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero-slider {
+        height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        padding: 0 30px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .hero-navigation {
+        bottom: 30px;
+    }
+
+    .hero-nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+}
+
+
+
+@media (max-width: 992px) {
+    .primary-menu {
+        display: none;
+    }
+
+    .d-md-none {
+        display: block;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 3rem;
+        background: linear-gradient(to bottom, #f8f9fa 60%, #fff 40%);
+        padding: 5rem 5%;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about-description p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .faq-section {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+
+    .faq-content {
+        flex: 0 0 100%;
+    }
+
+    .faq-content-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 993px) {
+    .d-md-none {
+        display: none;
+    }
+}
+
+
+/* Small Tablet / Large Mobile (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Navigation */
+    .announcement-bar {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .main-navigation {
+        padding: 12px 20px;
+    }
+
+    .site-logo {
+        font-size: 17px;
+    }
+
+    .logo-container {
+        order: 1;
+        flex: 1;
+        text-align: left;
+    }
+
+    .nav-actions {
+        order: 2;
+        gap: 12px;
+    }
+
+    .icon-btn {
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    /* Mobile menu styling */
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero-slider {
+        height: 50vh;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 20px;
+        position: relative;
+        margin-left: -10px;
+        margin-top: 20%;
+        z-index: 2;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    .hero-navigation {
+        bottom: 20px;
+    }
+
+    .hero-nav-btn {
+        width: 32px;
+        height: 32px;
+        margin: 0 10px;
+    }
+
+    .btn-shops {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .btn-shops button {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.9rem;
+    }
+
+    .about-description p {
+        font-size: 1rem;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .faq-section {
+        padding: 40px 20px;
+    }
+
+    .faq-content-header h2 {
+        font-size: 28px;
+    }
+
+    .faq-question h3 {
+        font-size: 16px;
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-column {
+        grid-column: span 2;
+    }
+
+    .newsletter-column {
+        grid-column: span 2;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Mobile Portrait (575px and below) */
+@media (max-width: 575px) {
+
+    /* Navigation */
+    .announcement-bar {
+        padding: 6px 10px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .main-navigation {
+        padding: 10px 15px;
+    }
+
+    .site-logo {
+        font-size: 15px;
+    }
+
+    .logo-container {
+        order: 1;
+        flex: 1;
+        text-align: left;
+    }
+
+    .nav-actions {
+        order: 2;
+        gap: 10px;
+    }
+
+    .icon-btn {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    /* Mobile menu styling */
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        padding: 15px 0;
+        font-size: 16px;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    */
+
+    /* Cart count adjustment */
+    .cart-count {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+        top: -4px;
+        right: -4px;
+    }
+
+    /* Hero Section */
+    .hero-slider {
+        height: 45vh;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section {
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 60%;
+        justify-content: center;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .hero-content {
+        padding: 0 15px;
+    }
+
+    .hero-navigation {
+        bottom: 15px;
+    }
+
+    .hero-nav-btn {
+        width: 28px;
+        height: 28px;
+        margin: 0 8px;
+    }
+
+    .arrow {
+        margin-left: 5px;
+    }
+
+    .about-section {
+        padding: 4rem 4%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.7rem;
+    }
+
+    .about-description p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-column {
+        grid-column: span 1;
+    }
+
+    .newsletter-column {
+        grid-column: span 1;
+    }
+
+    .footer-top {
+        padding: 50px 0 30px;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-shops {
+        /* flex-direction: column; */
+        align-items: center;
+        padding: 15px;
+    }
+
+    .btn-shops button {
+        width: 70%;
+        margin-bottom: 10px;
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+}
+
+
+/* Extra Small Mobile Devices (Up to 375px) */
+@media (max-width: 375px) {
+
+    /* Hero Section */
+    .hero-slider {
+        height: 40vh;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        padding: 0 5px;
+    }
+
+    .hero-content {
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+
+    .hero-nav-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .site-logo {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices (320px and below) */
+@media (max-width: 350px) {
+
+    /* Navigation */
+    .announcement-bar {
+        font-size: 10px;
+        padding: 5px 8px;
+    }
+
+    .main-navigation {
+        padding: 8px 10px;
+    }
+
+    .site-logo {
+        font-size: 12px;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    */
+
+    /* Hide account button on extra small screens */
+    .account-btn {
+        display: none;
+    }
+
+    .icon-btn {
+        font-size: 12px;
+    }
+
+    /* Mobile menu adjustments */
+    .primary-menu {
+        padding: 50px 15px 20px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 270px) {
+    .main-navigation {
+        padding: 5px 5px;
+        font-size: 10px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .site-logo {
+        font-size: 10px;
+    }
+}
+
+/* Landscape Mode Adjustments */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero-slider {
+        height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .hero-navigation {
+        bottom: 10px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .primary-menu {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .primary-menu {
+        display: none;
+    }
+
+    .primary-menu.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        padding: 15px 0;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}

@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Collection Banner */
+.collection-banner {
+    background-color: #f8f4f1;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url('/images/ChatGPT Image Apr 11, 2025, 08_38_03 PM.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Collections Container */
+.collections-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.collection-container {
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin-bottom: 80px;
+}
+
+
+
+.collection-main {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+
+.collection-banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.collection-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+
+.collection-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Collection Header */
+.collection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.collection-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #333, #777);
+    border-radius: 3px;
+}
+
+.results-count {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #555;
+}
+
+.results-count span {
+    font-weight: 600;
+    color: #333;
+    margin: 18px;
+
+}
+
+/* Collection Sorting */
+.collection-sorting {
+    display: flex;
+    align-items: center;
+}
+
+.collection-sorting label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    margin-right: 12px;
+}
+
+.sort-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 40px 10px 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sort-select:hover {
+    border-color: #bbb;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: #999;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* show-more  */
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 70px;
+    position: relative;
+}
+
+.show-more-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.08) 20%,
+            rgba(0, 0, 0, 0.08) 80%,
+            rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.show-more-btn {
+    position: relative;
+    background-color: white;
+    border: 2px solid #333;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 40px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.show-more-btn:hover {
+    background-color: #333;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    letter-spacing: 2.5px;
+}
+
+
+.show-more-btn:disabled {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Hidden products styling */
+.product-item.hidden {
+    display: none;
+}
+
+
+
+
+/* Beautiful Products Grid Styling */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 35px;
+    margin: 40px auto;
+    max-width: 1400px;
+    padding: 0 20px;
+}
+
+/* Product Item */
+.product-item {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image Container */
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 380px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.product-item:hover .product-image {
+    transform: scale(1.05);
+}
+
+/* Overlay effect on hover */
+.product-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-item:hover .product-image-container::after {
+    opacity: 1;
+}
+
+/* Product Details */
+.product-details {
+    padding: 25px;
+    position: relative;
+    background: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Product Category */
+.product-category {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.product-category::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background-color: #ddd;
+    transition: width 0.3s ease;
+}
+
+.product-item:hover .product-category::after {
+    width: 100%;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+.product-item:hover .product-title {
+    color: #000;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-price .original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Product Actions */
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-cart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transition: all 0.5s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart:hover::before {
+    left: 100%;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #777;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+    background-color: #f9f9f9;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+    transform: scale(1.1);
+}
+
+.wishlist-btn i {
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Animation for new products */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+.product-item {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.product-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.product-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.product-item:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.product-item:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.product-item:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .collection-banner {
+        height: 350px;
+    }
+
+    .collection-title {
+        font-size: 40px;
+    }
+
+    .collection-description {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .product-image-container {
+        height: 320px;
+    }
+
+    .product-details {
+        padding: 20px;
+    }
+
+    .collection-banner {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .collection-title {
+        font-size: 36px;
+    }
+
+    .collection-description {
+        font-size: 15px;
+    }
+
+    .collection-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .collection-header::after {
+        width: 60px;
+    }
+
+    .show-more-container {
+        margin: 40px auto 60px;
+    }
+
+    .show-more-btn {
+        font-size: 14px;
+        padding: 12px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 25px;
+    }
+
+    .product-image-container {
+        height: 350px;
+    }
+
+    .collection-banner {
+        background-color: #f8f4f1;
+        padding: 60px 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        background-image: url('/images/ChatGPT Image Apr 11, 2025, 08_38_03 PM.webp');
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        height: 250px;
+        background-size: cover;
+
+    }
+
+    .collection-title {
+        font-size: 30px;
+    }
+
+    .collection-description {
+        font-size: 14px;
+    }
+
+    .sort-select {
+        padding: 8px 35px 8px 15px;
+        font-size: 13px;
+    }
+
+    .show-more-btn {
+        font-size: 13px;
+        padding: 10px 30px;
+        width: 80%;
+        max-width: 250px;
+    }
+}
