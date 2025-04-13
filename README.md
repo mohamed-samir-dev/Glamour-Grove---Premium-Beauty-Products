@@ -33,7 +33,7 @@ Visit the live website here: [Glamour Grove](http://your-website-link.com)
 
 ## Website Preview
 
-![Glamour Grove Preview]('/images/screencapture-127-0-0-1-5500-index-html-2025-04-13-16_54_16.webp')
+![Glamour Grove Preview]('/images//screencapture-127-0-0-1-5500-index-html-2025-04-13-16_54_16.webp')
 
 ---
 
