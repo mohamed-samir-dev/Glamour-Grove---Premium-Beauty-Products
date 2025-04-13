@@ -29,7 +29,7 @@ If you'd like to contribute to improving the website, feel free to open an "Issu
 
 ## Live Website
 
-Visit the live website here: [Glamour Grove](http://your-website-link.com)
+Visit the live website here: [Glamour Grove](https://glamour-grove-premium-beauty-products.vercel.app/)
 
 ## Website Preview
 
