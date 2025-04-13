@@ -31,10 +31,6 @@ If you'd like to contribute to improving the website, feel free to open an "Issu
 
 Visit the live website here: [Glamour Grove](https://glamour-grove-premium-beauty-products.vercel.app/)
 
-## Website Preview
 
-![Glamour Grove Preview]('/images//screencapture-127-0-0-1-5500-index-html-2025-04-13-16_54_16.webp')
-
----
 
 Developed by Mohammed Samier.
